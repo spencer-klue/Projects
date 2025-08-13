@@ -95,8 +95,3 @@ seaborn
 - Calibrate thresholds to match business KPIs (e.g., daily call quota).
 - Re-run tuning periodically as campaigns/traffic mix change.
 
----
-
-## 📜 License
-MIT (or your preference) — add a `LICENSE` file if you plan to share/reuse.
-
