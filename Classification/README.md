@@ -1,4 +1,4 @@
-# ExtraaLearn — Lead Conversion Classification (Notebook)
+# ExtraaLearn — Lead Conversion Classification
 
 > Predict which leads are likely to convert and surface the drivers behind conversion for an EdTech funnel.
 
@@ -6,12 +6,12 @@ This repository contains the notebook **`Classification.ipynb`** that builds and
 
 ---
 
-## 🧠 Problem
+## Problem
 Given historic lead interactions (web/app behavior, channels, last activity, profile completion, etc.), predict **`status`** (1 = converted, 0 = not converted) so Sales/Marketing can prioritize outreach and tailor nurture flows.
 
 ---
 
-## 📦 Data (from project brief)
+## Data (from project brief)
 Each row = one lead.
 
 **Target**
@@ -25,11 +25,11 @@ Each row = one lead.
 - `last_activity` (Email / Phone / Website subtypes)
 - Channel flags: `print_media_type1`, `print_media_type2`, `digital_media`, `educational_channels`, `referral`
 
-> ⚠️ The notebook currently reads the CSV from an absolute path. **Update the path in the first data cell** to a relative one (e.g., `data/ExtraaLearn.csv`) or place the file accordingly.
+> The notebook currently reads the CSV from an absolute path. **Update the path in the first data cell** to a relative one (e.g., `data/ExtraaLearn.csv`) or place the file accordingly.
 
 ---
 
-## 🔍 What’s in the notebook
+## What’s in the notebook
 - **EDA**
   - Category distributions and conversion rates
   - Numeric vs target plots & correlation heatmap
@@ -49,7 +49,7 @@ Each row = one lead.
 
 ---
 
-## 📈 Results (from notebook outputs)
+## Results (from notebook outputs)
 **Test set**
 - **Baseline Decision Tree** – *Accuracy*: **0.81**, *Recall (class 1)*: **0.70**, *Precision (class 1)*: **0.69**
 - **Tuned Random Forest** – *Accuracy*: **0.84**, *Recall (class 1)*: **0.85**, *Precision (class 1)*: **0.69**
@@ -58,7 +58,7 @@ Each row = one lead.
 
 ---
 
-## ▶️ How to run
+## How to run
 1) Create an environment and install deps:
 ```bash
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
@@ -82,7 +82,7 @@ seaborn
 
 ---
 
-## 🧭 Business takeaways (summarize after you re-run on your data)
+## Business takeaways (summarize after you re-run on your data)
 - High **profile completion** and stronger **on-site engagement** are associated with higher conversion.
 - **Website-first** interactions tend to convert better than **mobile-app-first** interactions in this dataset.
 - **Referrals / educational channels** often indicate warmer intent.
@@ -90,7 +90,7 @@ seaborn
 
 ---
 
-## ⚖️ Notes & limitations
+## Notes & limitations
 - Historical-data bias may reflect past outreach/UX; monitor drift and fairness.
 - Calibrate thresholds to match business KPIs (e.g., daily call quota).
 - Re-run tuning periodically as campaigns/traffic mix change.
