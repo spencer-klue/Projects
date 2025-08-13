@@ -2,11 +2,11 @@
 
 > Build practical recommenders on the Amazon **Electronics** ratings dataset using popularity baselines, neighborhood methods, and matrix factorization.
 
-This folder contains **`Recommendation Systems (1).ipynb`**, a Jupyter notebook that implements multiple recommendation approaches and compares them on offline metrics.
+This folder contains **`Recommendation Systems.ipynb`**, a Jupyter notebook that implements multiple recommendation approaches and compares them on offline metrics.
 
 ---
 
-## 🎯 Goals
+## Goals
 - Implement **rank-based** (popularity) and **collaborative filtering** recommenders.
 - Tune **User–User** and **Item–Item** KNN models and an **SVD** (matrix factorization) model.
 - Evaluate with **RMSE**, **Precision@10**, **Recall@10**, and **F1** on a held-out test split.
@@ -17,7 +17,7 @@ This folder contains **`Recommendation Systems (1).ipynb`**, a Jupyter notebook 
 
 ---
 
-## 📦 Data
+## Data
 - **Source file :** `ratings_Electronics.csv` (Amazon product reviews/ratings; Electronics subset)
 - **Columns used:** `user_id`, `prod_id`, `rating` (a `timestamp` column is read but not required for modeling)
 - **Prefiltering (as coded):**
@@ -27,11 +27,11 @@ This folder contains **`Recommendation Systems (1).ipynb`**, a Jupyter notebook 
   - Raw: **(7,824,482, 3)**
   - After filtering: **(65,290, 3)**
 
-> ⚠️ The notebook reads from an **absolute path** in the first cell. Update it to a **relative path** like `data/ratings_Electronics.csv` and place the file accordingly.
+>  The notebook reads from an **absolute path** in the first cell. Update it to a **relative path** like `data/ratings_Electronics.csv` and place the file accordingly.
 
 ---
 
-## 🧠 Methods Implemented
+## Methods Implemented
 1) **Rank‑Based Recommender** (Popularity)
    - Top‑N items by volume and/or average rating as a sensible cold‑start fallback.
 2) **User–User CF (KNNBasic)**  
@@ -46,7 +46,7 @@ This folder contains **`Recommendation Systems (1).ipynb`**, a Jupyter notebook 
 
 ---
 
-## 📊 Results
+## Results
 
 ### Cross‑Validation (Grid Search) — best RMSE
 - **User–User KNN (cosine):** **0.9701**, params: `k=60, min_k=5, user_based=True`
@@ -73,7 +73,7 @@ This folder contains **`Recommendation Systems (1).ipynb`**, a Jupyter notebook 
 
 ---
 
-## ▶️ How to Run
+## How to Run
 1) Create an environment and install deps:
 ```bash
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
@@ -97,7 +97,7 @@ seaborn
 
 ---
 
-## 🧭 Usage Examples (from the notebook)
+## Usage Examples (from the notebook)
 - **Top‑N for a user:** `get_recommendations(df_final, user_id=<id>, top_n=10, algo=<fitted_model>)`
 - **Similar users/items:** neighbor queries using trained KNN models.
 
@@ -105,7 +105,7 @@ seaborn
 
 ---
 
-## ⚖️ Limitations & Next Steps
+## Limitations & Next Steps
 - **Cold start:** Popularity & content features (title/category embeddings) can help bootstrap.
 - **Bias & Drift:** Popular items/users dominate; monitor over time and add re‑ranking for diversity/novelty.
 - **Tuning:** Add more similarity options (Pearson‑baseline), try **BPR/WARP** (implicit feedback) and **LightFM/implicit** for large‑scale.
