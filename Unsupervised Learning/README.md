@@ -5,7 +5,7 @@
 Discover structure in unlabeled data using clustering (KMeans/DBSCAN/Agglomerative) and dimensionality reduction (PCA/TSNE). This notebook explores modeling choices, evaluates cluster quality, and visualizes segments for downstream use (e.g., marketing personas, anomaly screening).
 
 ## Data
-- Loaded from: `/Users/spenc/Programming/DS/Unsupervised Learning CS/marketing_campaign.csv", sep="\t`
+- Loaded from: marketing_campaign.csv
 
 
 ## Methods
