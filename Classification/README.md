@@ -58,24 +58,6 @@ Each row = one lead.
 
 ---
 
-## 🗂 Recommended repo layout (optional)
-If you split the notebook into a small project, use:
-```
-.
-├─ data/
-│  └─ ExtraaLearn.csv              # (not committed if private)
-├─ notebooks/
-│  └─ Classification.ipynb
-├─ reports/
-│  └─ figures/                     # exported plots
-├─ src/                            # (optional) turn notebook into scripts
-│  ├─ train.py
-│  └─ score.py
-└─ README.md
-```
-
----
-
 ## ▶️ How to run
 1) Create an environment and install deps:
 ```bash
