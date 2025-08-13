@@ -1,4 +1,4 @@
-# Unsupervised Learning — Clustering & Dimensionality Reduction (Notebook)
+# Unsupervised Learning — Clustering & Dimensionality Reduction
 
 
 >
@@ -58,10 +58,3 @@ seaborn
 - Results depend on scaling and pre‑filters; keep a pipeline for reproducibility.
 - For high‑dimensional sparse data, consider **TruncatedSVD**/**UMAP**.
 - Re‑evaluate segment definitions as new data arrives (drift).
-
----
-
-### Detected from this notebook
-- **Data sources:** /Users/spenc/Programming/DS/Unsupervised Learning CS/marketing_campaign.csv", sep="\t
-- **Algorithms/Tools:** KMeans, StandardScaler, silhouette_score
-- **KMeans k-values tried:** 4
