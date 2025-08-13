@@ -18,7 +18,7 @@ This folder contains **`Recommendation Systems (1).ipynb`**, a Jupyter notebook 
 ---
 
 ## 📦 Data
-- **Source file (from notebook):** `ratings_Electronics.csv` (Amazon product reviews/ratings; Electronics subset)
+- **Source file :** `ratings_Electronics.csv` (Amazon product reviews/ratings; Electronics subset)
 - **Columns used:** `user_id`, `prod_id`, `rating` (a `timestamp` column is read but not required for modeling)
 - **Prefiltering (as coded):**
   - Keep users with **≥ 50 ratings**
@@ -46,7 +46,7 @@ This folder contains **`Recommendation Systems (1).ipynb`**, a Jupyter notebook 
 
 ---
 
-## 📊 Results (this notebook run)
+## 📊 Results
 
 ### Cross‑Validation (Grid Search) — best RMSE
 - **User–User KNN (cosine):** **0.9701**, params: `k=60, min_k=5, user_based=True`
