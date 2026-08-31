@@ -1,42 +1,52 @@
-# Room Name Here
+# Archetype Name Here
 
 > **Category:** (copy from ROOM_CATALOG.md, or make one up)
-> **Status:** ☐ I have this room ☐ Planned / dream ☐ Not applicable
-> **Floor:**   **Connects to:**
+> **Status:** ☐ v1 ☐ later ☐ idea only
+> An archetype is a recipe, not a room. The generator instantiates it many
+> times, sized and weathered by data. Design the *kind*, not the instance.
 
-## Basics
-- Dimensions (L × W × H):
-- Shape (rectangle / L-shape / open-plan / other):
-- Doors (count, type, which wall):
-- Windows (count, size, which wall):
-
-## Surfaces
-- Flooring:
-- Walls (color / material):
-- Ceiling (height / type — flat, vaulted, sloped):
-- Trim / accents:
-
-## Lighting
-- Natural light (direction, amount):
-- Fixtures (ceiling, lamps, LED strips):
-
-## Fixed features
-<!-- built-ins, fireplace, counters, appliances, plumbing, radiators -->
+## Trigger — what summons this room
+<!-- e.g. "folder category = music_production", "extension mix dominated by
+     .flp/.wav", "folder is a cloud placeholder with 0 real bytes" -->
 -
 
-## Furniture & objects
-<!-- one per line: item — rough size — position ("sofa — 2.2 m — against north wall") -->
+## Scaling — how data reshapes it
+- Small instance (few files, small bytes) looks like:
+- Large instance (huge folder) looks like:
+- What multiplies with file count (racks, crates, shelves, machines):
+
+## Condition states — age wear
+<!-- same room at increasing untouched-years; describe 2–3 stops -->
+- Fresh / recently touched:
+- Dusty (1–3 years):
+- Overgrown / ruins (3+ years):
+
+## Hydration states
+- Real bytes (solid):
+- Placeholder / ghost (the file claims to exist but has no substance):
+- Sealed / unreadable (locked vault; what does the door look like?):
+
+## Surfaces & light
+- Flooring / walls / ceiling:
+- Light sources (this carries most of the beauty — be specific):
+
+## Fixed features
+<!-- what is ALWAYS in this archetype regardless of data -->
+-
+
+## Data-driven props
+<!-- one per line: prop — what file/metadata spawns it
+     ("mixing desk — one per DAW project file", "crate — per 100 files") -->
 -
 
 ## Style & mood
-- Color palette:
-- Style (modern / cozy / industrial / farmhouse / …):
+- Palette:
 - The vibe in one sentence:
+- Sound (hum, drips, wind, tape hiss…):
 
 ## References
-<!-- photos, links, Pinterest boards, files on your computer -->
+<!-- games, photos, links that nail the feel -->
 -
 
 ## Notes for Claude
-<!-- anything else I should know when building this in Godot -->
 -
